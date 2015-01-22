@@ -2,7 +2,7 @@ public int sX, sY;
 public void setup()
 {
 	size(500,500);
-	frameRate(5);
+	frameRate(60);
 }
 public void draw()
 {
@@ -25,7 +25,6 @@ public void sierpinski(int x, int y, int len)
 		int g = (int)(Math.random()*255);
 		int b = (int)(Math.random()*255);
 		fill(r,g,b);
-		noStroke();
 		triangle(x, y, x+len/2, y-len, x+len, y);
 	}
 }
